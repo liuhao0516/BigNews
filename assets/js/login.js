@@ -36,5 +36,36 @@ $(function() {
         ]
 
     });
+    $('.register .myForm').on('submit', function(e) {
+        e.preventDefault()
+        let data = $(this).serialize()
+        $.ajax({
+            type: 'POST',
+            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            data: data,
+            success: function(res) {
+                layer.msg(res.message);
+                if (res.status == 0) {
+                    $('.register a').click()
+                }
+            }
+        })
+    })
 
+    $('.login .myForm').on('submit', function(e) {
+        e.preventDefault()
+        let data = $(this).serialize()
+        $.ajax({
+            type: 'POST',
+            url: 'http://ajax.frontend.itheima.net/api/login',
+            data: data,
+            success: function(res) {
+                layer.msg(res.message)
+                if (res.status == 0) {
+
+                    location.href = './index.html'
+                }
+            }
+        })
+    })
 })
