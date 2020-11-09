@@ -41,7 +41,7 @@ $(function() {
         let data = $(this).serialize()
         $.ajax({
             type: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            url: '/api/reguser',
             data: data,
             success: function(res) {
                 layer.msg(res.message);
@@ -57,7 +57,7 @@ $(function() {
         let data = $(this).serialize()
         $.ajax({
             type: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             data: data,
             success: function(res) {
                 layer.msg(res.message)
