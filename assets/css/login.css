@@ -30,18 +30,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.title {
-    padding: 20px 0;
-    text-align: center;
-    box-sizing: border-box;
-}
-
 .myForm {
     padding: 0 30px;
-}
-
-.myForm .go {
-    float: right;
 }
 
 .login {
@@ -52,10 +42,6 @@ body {
     padding: 18px 0;
     text-align: center;
     /* box-sizing: border-box; */
-}
-
-.myForm {
-    padding: 0 30px;
 }
 
 .myForm a {
@@ -77,5 +63,9 @@ body {
 }
 
 .login {
+    display: block;
+}
+
+.register {
     display: none;
 }
