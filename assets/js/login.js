@@ -61,6 +61,7 @@ $(function() {
             data: data,
             success: function(res) {
                 layer.msg(res.message)
+
                 if (res.status == 0) {
 
                     location.href = './index.html'
