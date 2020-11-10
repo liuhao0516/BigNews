@@ -61,10 +61,11 @@ $(function() {
             data: data,
             success: function(res) {
                 layer.msg(res.message)
-                console.log(res.message);
+                console.log(res);
 
                 if (res.status == 0) {
 
+                    window.localStorage.setItem('token', res.token)
                     location.href = './index.html'
                 }
             }
