@@ -30,6 +30,16 @@ $(function() {
 
         }
     })
+    $('.layui-header .layui-nav-item').on('click', function() {
+        layer.confirm('确定退出?', { icon: 3, title: '提示' }, function(index) {
+
+            window.localStorage.removeItem('token')
+            location.href = './login.html'
+            layer.close(index);
+        });
+
+
+    })
 
 
 })

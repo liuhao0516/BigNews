@@ -41,3 +41,7 @@
 .userInfo .layui-nav-img {
     display: none;
 }
+
+.layui-body {
+    overflow: hidden;
+}
