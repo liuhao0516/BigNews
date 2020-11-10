@@ -1,0 +1,43 @@
+.layui-header .layui-nav .txt-avatar,
+.userInfo .txt-avatar {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgb(0, 150, 136);
+    text-align: center;
+    line-height: 36px;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+.userInfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.userInfo a {
+    color: #fff;
+}
+
+.heimafooter {
+    text-align: center;
+}
+
+.layui-header .layui-icon,
+.layui-nav .layui-icon,
+.layui-nav .icon-16 {
+    margin-right: 6px;
+}
+
+.layui-nav-child .layui-icon {
+    padding-left: 20px;
+}
+
+.layui-header .layui-nav .layui-nav-img,
+.userInfo .layui-nav-img {
+    display: none;
+}

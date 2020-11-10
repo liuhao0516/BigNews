@@ -61,6 +61,7 @@ $(function() {
             data: data,
             success: function(res) {
                 layer.msg(res.message)
+                console.log(res.message);
 
                 if (res.status == 0) {
 
