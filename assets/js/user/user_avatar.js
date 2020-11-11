@@ -8,4 +8,7 @@ $(function() {
     }
     $img.cropper(options)
 
+    $('.btn-upload').on('click', function() {
+        $('#avatar').click()
+    })
 })
