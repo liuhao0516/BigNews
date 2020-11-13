@@ -10,3 +10,8 @@
 .layui-card-header button {
     margin-top: 6px;
 }
+
+.myForm {
+    width: 450px;
+    margin-top: 10px;
+}
